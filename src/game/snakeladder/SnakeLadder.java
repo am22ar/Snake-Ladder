@@ -21,15 +21,16 @@ public class SnakeLadder {
 				break;
 		case 1: System.out.println("Ladder!");
 				userPosition = userPosition + dice;
-				System.out.println("Presnt Position of the User: "+userPosition);
+				
 				break;
 		default: System.out.println("Snake!");
 				userPosition = userPosition - dice;
-				System.out.println("Presnt Position of the User: "+userPosition);
+				
 				if(userPosition<0)
 				{ userPosition = 0; 
 				}
 		}
+		System.out.println("Presnt Position of the User: "+userPosition);
 		
 	}
 
