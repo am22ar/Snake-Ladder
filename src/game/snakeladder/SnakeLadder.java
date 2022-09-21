@@ -26,7 +26,10 @@ public class SnakeLadder {
 				break;
 		case 1: System.out.println("Ladder!");
 				userPosition = userPosition + dice;
-				
+				if(userPosition >100)
+				{
+					userPosition -= dice;
+				}
 				break;
 		default: System.out.println("Snake!");
 				userPosition = userPosition - dice;
@@ -36,7 +39,7 @@ public class SnakeLadder {
 					userPosition = 0; 
 				}
 		}
-		System.out.println("Presnt Position of the User: "+userPosition);
+		System.out.println("Present Position of the User: "+userPosition);
 		}
 		System.out.println("User has rolled "+count+" times to win!");
 	}
